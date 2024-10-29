@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE items>
+<items>
+    <row>
+       <sql>CREATE TABLE clientes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT NOT NULL,
+    email TEXT,
+    telefone TEXT,
+    data_nascimento DATE,
+    idade INTEGER,  -- Nova coluna idade
+    cidade TEXT,
+    estado TEXT,
+    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status TEXT DEFAULT 'ativo'
+)</sql>
+    </row>
+</items>
